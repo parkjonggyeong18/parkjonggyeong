@@ -20,12 +20,12 @@ public class Solution {
 			
 			}
 			for(int i = 1; i < n; i++) {
-				if (a[i] > a[i - 1]) {
+				
 					up = Math.max(up, (a[i] - a[i - 1]));
-				} else {
+		
 					down = Math.max(down, (a[i - 1] - a[i]));
 
-				}
+	
 
 			}
 
