@@ -38,12 +38,17 @@ public class Solution {
 				for (int j = 0; j < m; j++) {
 					wl[i][j] = input.charAt(j) - 'A';
 					// *** W = 22, L = 11 ***
+					
+				}
+
+			}
+			for (int i = 0; i < n; i++) {
+				for (int j = 0; j < m; j++) {
 					if(wl[i][j] == 22) {
 						q.add(new Point(i, j, 0));
 						v[i][j] = true;						
 					}
 				}
-
 			}
 			result = 0;
 			bfs();
