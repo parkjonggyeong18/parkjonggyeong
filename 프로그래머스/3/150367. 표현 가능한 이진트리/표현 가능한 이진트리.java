@@ -11,9 +11,9 @@ class Solution {
             int h = 0;
             while((int) Math.pow(2, h) - 1 < binary.length()){
                 h++;
-                len = (int) Math.pow(2, h) - 1 ;
+               
             }
-           
+            len = (int) Math.pow(2, h) - 1 ;
             b = new boolean[len];
             int cnt = len - binary.length();
             for(int j = 0; j < binary.length(); j++){
