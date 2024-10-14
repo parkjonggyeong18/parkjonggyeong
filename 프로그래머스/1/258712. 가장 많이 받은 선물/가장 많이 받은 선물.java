@@ -11,16 +11,12 @@ class Solution {
         int[][] giftLog = new int[n][n];
         int[] giftPoint = new int[n];
         for (String gift : gifts) {
-            System.out.println(gift);
             String[] g = gift.split(" ");
             int giver = friendIdx.get(g[0]);
-            System.out.println(g[0]);
-            System.out.println(giver);
-            
             int taker = friendIdx.get(g[1]);
 
             giftLog[giver][taker]++;
-            giftPoint[giver]++; 
+            giftPoint[giver]++;
             giftPoint[taker]--;
         }
 
@@ -40,7 +36,7 @@ class Solution {
                 }
             }
         }
-        Arrays.sort(nextMonth);
-        return nextMonth[n - 1];
+        
+        return Arrays.stream(nextMonth).max().orElse(0);
     }
 }
