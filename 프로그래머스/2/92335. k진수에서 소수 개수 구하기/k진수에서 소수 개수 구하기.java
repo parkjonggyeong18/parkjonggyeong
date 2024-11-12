@@ -8,10 +8,9 @@ class Solution {
         String newK = changeK(n, k);
         
         // 0을 기준으로 분리한 후, 빈 문자열을 건너뛰도록 처리
-        String[] sosus = newK.split("0+");
+        String[] sosus = newK.split("0");
         for (String sosu : sosus) {
             if (sosu.length() > 0) {
-                
                     long num = Long.parseLong(sosu); 
                     if (isPrime(num)) {
                         answer++;
