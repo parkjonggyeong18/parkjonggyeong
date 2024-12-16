@@ -31,9 +31,10 @@ public class Main {
             }
             if(cnt < key){
                 high = mid - 1;
-                continue;
-            }
+            }else{
                 low = mid + 1;
+            }
+                
 
         }
         return low -1 ;
