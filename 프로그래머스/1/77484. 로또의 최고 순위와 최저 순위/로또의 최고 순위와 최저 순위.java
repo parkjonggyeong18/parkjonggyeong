@@ -3,8 +3,7 @@ class Solution {
     static int max, min;
     public int[] solution(int[] lottos, int[] win_nums) {
         int[] answer = new int[2];
-        Arrays.sort(lottos);
-        Arrays.sort(win_nums);
+        
         max = 7;
         min = 7;
         for(int i = 0; i < lottos.length; i++){
