@@ -8,15 +8,16 @@ class Solution {
         min = 7;
         for(int i = 0; i < lottos.length; i++){
             for(int j = 0; j <  win_nums.length; j++){
-                if(lottos[i] == 0){
-                max -= 1;
-                    break;
-                }
-                else if(lottos[i] == win_nums[j]){
+                if(lottos[i] == win_nums[j]){
                     max -= 1;
                     min -= 1;
                     break;
                 }
+                else if(lottos[i] == 0){
+                max -= 1;
+                    break;
+                }
+           
             }
         }
         answer[1] = (min > 6) ? 6 : min;
