@@ -5,7 +5,7 @@ class Solution {
 
     public int[] solution(String[] info, String[] query) {
         for(int i=0;i<info.length;i++) 
-            DFS(info[i].split(" "), "", 0);
+            dfs(info[i].split(" "), "", 0);
 
         int n = query.length;
         int result[] = new int[n];
@@ -19,7 +19,7 @@ class Solution {
         return result;
     }
 
-    static void DFS(String[] info, String str, int depth) {
+    static void dfs(String[] info, String str, int depth) {
         if(depth == 4) {
             int score = Integer.parseInt(info[depth]);
             if(map.containsKey(str)) {
@@ -33,8 +33,8 @@ class Solution {
             return;
         }
 
-        DFS(info, str + "-", depth + 1);
-        DFS(info, str + info[depth], depth + 1);
+        dfs(info, str + "-", depth + 1);
+        dfs(info, str + info[depth], depth + 1);
     }
 
     static int BinarySearch(String query) {
