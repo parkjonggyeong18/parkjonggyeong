@@ -3,13 +3,13 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Main {
-    static String n;      // 원본 문자열
-    static String bomb;   // 폭탄 문자열
+    static String n;      
+    static String bomb;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        n = br.readLine();      // 입력: 원본 문자열
-        bomb = br.readLine();   // 입력: 폭탄 문자열
+        n = br.readLine();
+        bomb = br.readLine();
 
         String result = removeBombs(n, bomb);
 
