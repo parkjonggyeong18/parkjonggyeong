@@ -49,8 +49,6 @@ void solve(){
 }
 
 int main() {
-	cin.tie(0);
-	cout.tie(0);
 	cin >> N;
 	for(int i = 1; i <= N; i++){
 	    for(int j = 1; j <= N; j++){
