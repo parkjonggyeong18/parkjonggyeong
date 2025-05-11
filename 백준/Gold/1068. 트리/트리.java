@@ -43,7 +43,7 @@ public class Main {
         if (root == delete) {
             return;
         }
-        if (tree[root].isEmpty() || (tree[root].size() == 1 && tree[root].get(0) == delete)) {
+        if (tree[root].isEmpty() || (tree[root].size() == 1) ){
             cnt++;
             return;
         }
