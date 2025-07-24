@@ -35,7 +35,7 @@ public class Main {
 
 
         for (int i = 0; i < n; i++) {
-            for(int j = 99; j >= person[i][0]; j--){
+            for(int j = 100; j >= person[i][0]; j--){
                 if(j - person[i][0] >= 0){
                     dp[j] = Math.max(dp[j], dp[j - person[i][0]] + person[i][1]);
                 }
